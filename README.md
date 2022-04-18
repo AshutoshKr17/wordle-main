@@ -1,8 +1,4 @@
-
----
-A recreation of the popular game [Wordle](https://www.nytimes.com/games/wordle/) by Josh Wardle (now purchased by the New York Times), with additional modes and features.
-Hosted on GitHub pages [here](https://mikhad.github.io/wordle/).
-
+Name : Ashutosh kumar 
 ## Additional Features
 - Words are chosen from the list of words at random instead of in sequence, and the solution is not stored in localStorage, making it harder to cheat. The seed for the random number is created from the date, ensuring that everyone gets the same random number, so people can still compare answers.
 - When you complete a game the definition of the word is shown on the end of game modal.
@@ -18,19 +14,8 @@ Hosted on GitHub pages [here](https://mikhad.github.io/wordle/).
 - Service worker which allows the game to be easily downloaded as a progressive web app and run offline.
 - Give Up button.
 
-## Additional modes
+## modes
 **Hourly mode**: A new word every hour.
 
 **Infinite mode**: A new word every time you refresh, for the true addicts.
 
-# Technical details
-This is written with Svelte in Typescript. This is my first Svelte project, and is intended as an exercise to help me learn and become proficient in Svelte.
-This is still in development. My goal is to make it as close to the original wordle as possible while also adding additional features. I will continue to make it more similar to the original.
-
-<details>
-<summary>How to create a new mode</summary>
-
-- Add the mode name to the **end** of the GameMode enum in `enums.ts`
-- Add a case for that mode in the newSeed function in `utils.ts`
-- Add a ModeData object to the modeData modes array in `utils.ts` 
-</details>
