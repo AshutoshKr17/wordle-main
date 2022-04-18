@@ -7,15 +7,15 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear --host",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "deploy": "gh-pages -b master -d build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MikhaD/wordle.git"
   },
   "keywords": [],
-  "author": "Ashutosh Kumar Kushwaha"
-  ,
+  "author": "Ashutosh Kumar Kushwaha",
   "homepage": "https://github.com/MikhaD/wordle#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
@@ -35,6 +35,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "seedrandom": "^3.0.5",
     "sirv-cli": "^2.0.2"
   }
